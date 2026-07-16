@@ -1,0 +1,24 @@
+{
+  "name": "transilience-ideate",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "highlight.js": "^11.11.1",
+    "idb-keyval": "^6.2.1",
+    "lz-string": "^1.5.0",
+    "nanostores": "^0.11.3",
+    "pixi.js": "^8.6.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vitest": "^4.1.9"
+  }
+}

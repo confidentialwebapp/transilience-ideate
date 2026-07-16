@@ -1,0 +1,21 @@
+# Transilience Ideate — static site on Launch Pad
+# Deploy: lpd deploy (from this directory)
+project = "transilience-ideate"
+domainPattern = "transilience-ideate.vercel.app"
+
+[[service]]
+name = "web"
+dockerfile = "./Dockerfile"
+cpu = 128
+memory = 32
+replicas = 1
+domain = "transilience-ideate.vercel.app" # change to your domain
+port = 80
+
+  [service.healthCheck]
+  path = "/"
+
+  [service.rollout]
+  maxSurge = 1
+  drainTimeout = "10s"
+  stopGrace = "15s"
